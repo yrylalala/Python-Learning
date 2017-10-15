@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Python相关简介</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///C:\Users\yry\.atom\packages\markdown-preview-enhanced\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none} 
+       
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h1 class="mume-header" id="python&#x76F8;&#x5173;&#x7B80;&#x4ECB;">Python相关简介</h1>
+
+<ul>
+<li>
+<h2>Python起源</h2>
+</li>
+</ul>
+<p>  Python是著名的“龟叔”Guido van Rossum在1989年圣诞节期间，<br>
+<strong>为了打发无聊的圣诞节而编写的一个编程语言</strong> 。<br>
+  Python来自Guido所挚爱的电视剧Monty Python's Flying Circus (BBC1960-1970年代播放的室内情景幽默剧，以当时的英国生活为素材)。他希望这个新的叫做Python的语言，能实现他的理念(一种C<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> 和shell<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> 之间，功能全面，易学易用，可拓展的语言)。。Guido作为一个语言设计爱好者，已经有过设计语言的(不很成功)的尝试。这一次，<strong>也不过是一次纯粹的hacking行为</strong><sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>。</p>
+<ul>
+<li>
+<h2>语法特点</h2>
+</li>
+</ul>
+<p>  <strong>Python是一种面向对象、直译式的电脑程序语言。</strong> 它包含了一组功能完备的标准库，能够轻松完成很多常见的任务。它的语法简单，与其它大多数程序设计语言使用大括号不一样，它使用缩进来定义语句块。<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup></p>
+<p>  <strong>Python的设计哲学是“优雅”、“明确”、“简单”。</strong> Python开发者的哲学是“用一种方法，最好是只有一种方法来做一件事”，也因此它和拥有明显个人风格的其他语言很不一样。在设计Python语言时，如果面临多种选择，Python开发者一般会拒绝花俏的语法，而选择明确没有或者很少有歧义的语法。这些准则被称为“Python格言”。</p>
+<hr>
+<h3 class="mume-header" id="&#x4F18;&#x7F3A;&#x70B9;&#x603B;&#x7ED3;">优缺点总结</h3>
+
+<ul>
+<li>
+<h4>优点</h4>
+</li>
+</ul>
+<ol>
+<li>
+<p><strong>简单</strong><br>
+Python的语法非常优雅，甚至没有像其他语言的大括号，分号等特殊符号，代表了一种极简主义的设计思想。阅读Python程序像是在读英语。</p>
+</li>
+<li>
+<p><strong>易学</strong><br>
+Python入手非常快，学习曲线非常低，可以直接通过命令行交互环境来学习Python编程。</p>
+</li>
+<li>
+<p><strong>免费、开源</strong><br>
+Python的所有内容都是免费开源的，这意味着你不需要花一分钱就可以免费使用Python，并且你可以自由地发布这个软件的拷贝、阅读它的源代码、对它做改动、把它的一部分用于新的自由软件中。</p>
+</li>
+<li>
+<p><strong>自动内存管理</strong><br>
+如果你了解C语言、C++语言你就会知道内存管理给你带来很大麻烦，程序非常容易出现内存方面的漏洞。但是在Python中内存管理是自动完成的，你可以专注于程序本身。</p>
+</li>
+<li>
+<p><strong>可以移植</strong><br>
+由于Python是开源的，它已经被移植到了大多数平台下面，例如：Windows、MacOS、Linux、Andorid、iOS等等。</p>
+</li>
+<li>
+<p><strong>解释性</strong><br>
+大多数计算机编程语言都是编译型的，在运行之前需要将源码编译为操作系统可以执行的二进制格式(0110格式的)，这样大型项目编译过程非常消耗时间，而Python语言写的程序不需要编译成二进制代码。你可以直接从源代码运行程序。在计算机内部，Python解释器<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup> 把源代码转换成称为字节码的中间形式，然后再把它翻译成计算机使用的机器语言并运行。</p>
+</li>
+<li>
+<p><strong>面向对象</strong><br>
+Python既支持面向过程，又支持面向对象，这样编程就更加灵活。</p>
+</li>
+<li>
+<p><strong>可扩展</strong><br>
+Python除了使用Python本身编写外，还可以混合使用像C语言、Java语言等编写。<br>
+如果你需要你的一段关键代码运行得更快或者希望某些算法不公开，你可以把你的部分<br>
+程序用C或C++编写，然后在你的Python程序中使用它们。</p>
+</li>
+<li>
+<p><strong>可嵌入性</strong><br>
+你可以把Python嵌入你的C/C++程序，从而向你的程序用户提供脚本功能。</p>
+</li>
+<li>
+<p><strong>丰富的第三方库</strong><br>
+Python具有本身有丰富而且强大的库，而且由于Python的开源特性，第三方库也非常多，例如：在web开发、爬虫、科学计算等等</p>
+</li>
+</ol>
+<ul>
+<li>
+<h4>缺点</h4>
+</li>
+</ul>
+<ol>
+<li>
+<p><strong>速度慢</strong><br>
+由于，Python是解释型语言，所有它的速度会比，C、C++慢一些，但是不影响使用。由于，现在的硬件配置都非常高，基本上没有影响，除非是一些实时性比较强的程序可能会受到一些影响，但是也有解决办法，可以嵌入C程序。</p>
+</li>
+<li>
+<p><strong>强制缩进</strong><br>
+如果你有其他语言的编程经验，例如：C语言或者Java语言，那么Python的强制缩进一开始会让你很不习惯。但是如果你习惯了Python的缩进语法，你会觉得它非常优雅。<br>
+But，也会出现很多问题。<sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup></p>
+</li>
+<li>
+<p><strong>代码不能加密</strong><br>
+该缺点正是<strong>优点 5</strong>的另一面。如果要发布你的Python程序，实际上就是发布源代码，这一点跟C语言不同，C语言不用发布源代码，只需要把编译后的机器码（也就是你在Windows上常见的xxx.exe文件）发布出去。要从机器码反推出C代码是不可能的，所以，凡是编译型的语言，都没有这个问题，而解释型的语言，则必须把源码发布出去。<br>
+这个缺点仅限于你要编写的软件需要卖给别人挣钱的时候。好消息是目前的互联网时代，靠卖软件授权的商业模式越来越少了，靠网站和移动应用卖服务的模式越来越多了，后一种模式不需要把源码给别人。<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup></p>
+</li>
+<li>
+<p><strong>单行语句</strong><br>
+由于Python可以在尾部不写分号，所以一行只能有一条语句，这可能也算是一个不足吧，不过这真的微不足道。emmmmmm，可能对于那些写代码常忘分号的人是福音。</p>
+</li>
+</ol>
+<hr>
+<ul>
+<li>
+<h2>应用及学习方向</h2>
+</li>
+</ul>
+<p>任何一种计算机语言都是一种<strong>工具，用来和计算机交流的工具</strong>。<br>
+交流的最终目的是<strong>让计算机解决现实中的问题</strong>。</p>
+<p>这里要说的应用和学习反向其实最终都是一回事。<strong>需要什么样的应用就学习什么，学了什么才能在对应的问题上应用。</strong></p>
+<p>Python其实是一种万能胶水一样存在的编程语言。因为python的非常灵活，适用性非常广，学习成本低，出活快。而且相比较C，放弃过多对性能的关注，而将更多的注意力转移到解决问题上。</p>
+<p>Python的应用方向大体可以分为四类，如图。<br>
+<img src="https://github.com/yrylalala/Python-Learning/raw/master/pic/python%E7%9B%B8%E5%85%B3%E7%AE%80%E4%BB%8B/%E5%AD%A6%E4%B9%A0%E6%96%B9%E5%90%91.jpg" alt="python&#x5B66;&#x4E60;&#x65B9;&#x5411;"></p>
+<ul>
+<li>
+<p><strong>后端开发</strong>：这里和Java的后端开发有点类似，主要是处理移动端的后台问题。<br>
+<img src="https://github.com/yrylalala/Python-Learning/raw/master/pic/python%E7%9B%B8%E5%85%B3%E7%AE%80%E4%BB%8B/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91.jpg" alt="python&#x540E;&#x7AEF;&#x5F00;&#x53D1;"></p>
+</li>
+<li>
+<p><strong>科学计算</strong>：<br>
+这里的科学计算一般是用于数据分析。当然也有在图像处理里应用，不过现在很多图像处理都套上了机器学习。<br>
+<img src="https://github.com/yrylalala/Python-Learning/raw/master/pic/python%E7%9B%B8%E5%85%B3%E7%AE%80%E4%BB%8B/%E7%A7%91%E5%AD%A6%E8%AE%A1%E7%AE%97.jpg" alt="python&#x6570;&#x636E;&#x5206;&#x6790;"></p>
+</li>
+<li>
+<p><strong>网络爬虫</strong>：这方面其实是大多学习者最开始学的动力。因为...<br>
+<a href="https://www.zhihu.com/question/33646570/answer/101801158?utm_source=wechat_session&amp;utm_medium=social">自动判断知乎回答是否是美女爆照回答，并保存图片</a><br>
+<a href="https://www.zhihu.com/question/33646570/answer/101917543?utm_source=wechat_session&amp;utm_medium=social">爬豆瓣福利图</a><br>
+<a href="https://zhuanlan.zhihu.com/p/21883516">高德API+Python解决租房问题</a><br>
+网上资源这么丰富，不好好利用一下对得起自己吗！！！<br>
+这方面的学习比较零散，主要是学完基础部分之后，就是各种爬虫框架和各种爬虫的库的调用。</p>
+</li>
+<li>
+<p><strong>机器学习</strong>：emmmmm，这方面是四类中要求最高的，因为这里需要大量的数学理论分析，并且是做为科学理论实践，所以门槛是很高的。（不要瞎听网上宣传的什么多少多少天精通机器学习、人工智能什么的，连个线性代数都没学会的，这个坑请自动忽略）<br>
+这方面的学习还是要看看一些正统的学习教程。</p>
+</li>
+</ul>
+<p>  1. <mark>Python基础知识</mark><br>
+  2. <mark>机器学习基础知识</mark><br>
+  3. <mark>机器学习标准库 scikit-learn</mark><br>
+  4. <mark>科学计算 Python 软件包</mark><br>
+  5. <mark>实现机器学习的基本算法</mark></p>
+<p>  <a href="https://www.jiqizhixin.com/articles/2017-03-14-2">从零开始掌握Python机器学习（附资源）</a></p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>C语言，一种面向过程语言 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>一种脚本语言，常说的是Linux/Unix系统下的Shell脚本语言。类似Windows下的cmd命令，用户输入一条命令，它就运行一条 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>很多如今很牛的东西都是因一些技术宅出于一种娱乐或者打发时间的心态而出现的，比如Facebook，可以看看电影《社交网路》 <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>这里关于强制缩进的问题，在后面的优缺点中有一些说明 <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn5" class="footnote-item"><p><a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/00143161198846783e33de56d4041058c3dfc7e44ee1203000">廖雪峰教程之Python解释器</a> <a href="#fnref5" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn6" class="footnote-item"><p>参考<a href="http://note.youdao.com/noteshare?id=f591aba921885698ca6981e717b62adc&amp;sub=4CC9B330B18C4F1196E7DBAB5FC823D0">Python强制缩进的问题</a> <a href="#fnref6" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn7" class="footnote-item"><p>例如，mac的应用现在大量转向，提供基础免费版，通过内购服务收取高级用户的服务费；微信／微博也是是卖服务，后台服务器的源码根本不需要公开 <a href="#fnref7" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#python%E7%9B%B8%E5%85%B3%E7%AE%80%E4%BB%8B">Python相关简介</a><br>
+* <a href="#%E4%BC%98%E7%BC%BA%E7%82%B9%E6%80%BB%E7%BB%93">优缺点总结</a></li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    </body>
+    
+    
+    
+    <script>
+(function bindTaskListEvent() {
+  var taskListItemCheckboxes = document.body.getElementsByClassName('task-list-item-checkbox')
+  for (var i = 0; i < taskListItemCheckboxes.length; i++) {
+    var checkbox = taskListItemCheckboxes[i]
+    var li = checkbox.parentElement
+    if (li.tagName !== 'LI') li = li.parentElement
+    if (li.tagName === 'LI') {
+      li.classList.add('task-list-item')
+    }
+  }
+}())    
+</script>
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  </html>
