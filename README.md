@@ -1,4 +1,4 @@
-# [Python-Learning](https://yrylalala.github.io/Python-Learning/)
+# Python-Learning
 ### 目录
 - #### Python 相关简介
 - #### Python 解释器

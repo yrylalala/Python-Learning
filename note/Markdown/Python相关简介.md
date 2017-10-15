@@ -104,3 +104,5 @@ Python的应用方向大体可以分为四类，如图。
 &emsp;&emsp;5. ==实现机器学习的基本算法==
 
 &emsp;&emsp;[从零开始掌握Python机器学习（附资源）](https://www.jiqizhixin.com/articles/2017-03-14-2)
+
+###[返回目录](https://yrylalala.github.io/Python-Learning/)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[下一篇](/note/Html/Python解释器)
