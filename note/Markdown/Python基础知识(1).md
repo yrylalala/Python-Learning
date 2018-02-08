@@ -1,4 +1,4 @@
-# Python基础知识
+# Python基础知识（一）
 ### *简单变量输入输出及其格式*
 - #### 编写 Hello World
 ```python
@@ -6,7 +6,7 @@ print('Hello World')
 ```
 ![helloworld](https://github.com/yrylalala/Python-Learning/raw/master/pic/python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86(1)/helloworld.png)
 
-    - #### 输出格式
+- #### 输出格式
 ##### 输出函数
 ```python
 print()
