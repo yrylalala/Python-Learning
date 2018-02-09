@@ -20,17 +20,17 @@ set(val)
 ```python
 set_1 = {'a', 'b', 'c', 'd', 'a', 'b'}
 print(set_1)   # 输出集合，重复的元素被自动去掉
- 
+
 # 成员测试
 if('a' in set_1) :
     print('a 在集合中')
 else :
     print('a 不在集合中')
- 
+
 # set可以进行集合运算
 a = set('abcdefghij')
 b = set('abcklmn')
- 
+
 print(a)
 print(a - b)     # a和b的差集
 print(a | b)     # a和b的并集
@@ -42,9 +42,4 @@ print(a ^ b)     # a和b中不同时存在的元素
 
 ![Set](https://github.com/yrylalala/Python-Learning/blob/master/pic/Set/Set.png?raw=true)
 
-
-
-
-
-
-
+####[返回目录](https://yrylalala.github.io/Python-Learning/)

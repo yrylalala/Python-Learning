@@ -103,17 +103,17 @@ else:
 ```   python
 for i in range(5):
     print(i)          # 可以输出 0 1 2 3 4
-    
+
 for i in range(3,9):
     print(i)          # 可以输出 3 4 5 6 7 8
-    
+
 for i in range(0,10,2):
     print(i)          # 可以按照步长输出 0 2 4 6 8
 ```
 
 
 
-#### break 
+#### break
 
 ###### break 是可以跳出 while 和 for 循环体
 
@@ -121,8 +121,8 @@ for i in range(0,10,2):
 var = 10
 while var > 0:
     var = var-1
-    if var==5:         
-    	break   
+    if var==5:
+    	break
     print(var,end='')
 ```
 
@@ -132,14 +132,14 @@ while var > 0:
 
 #### continue
 
-###### continue 是用来跳过当前一次循环，可以跳过当前循环块中的剩下语句，继续下一轮循环。 
+###### continue 是用来跳过当前一次循环，可以跳过当前循环块中的剩下语句，继续下一轮循环。
 
 ```python
 var = 10
 while var > 0:
     var = var-1
-    if var==5:         
-    	continue  
+    if var==5:
+    	continue
     print(var,end='')
 ```
 
@@ -166,7 +166,7 @@ for n in range(2, 10):           # 查询质数
 
 ![else](https://github.com/yrylalala/Python-Learning/blob/master/pic/%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/else.png?raw=true)
 
-#### pass 
+#### pass
 
 ###### Python pass是空语句，是为了保持程序结构的完整性。
 
@@ -181,3 +181,4 @@ print('Over')
 
 ![pass](https://github.com/yrylalala/Python-Learning/blob/master/pic/%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5/pass.png?raw=true)
 
+####[返回目录](https://yrylalala.github.io/Python-Learning/)

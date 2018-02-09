@@ -20,11 +20,11 @@ keyword.kwlist
 ```python
 test = test_1 + \
        test_2 + \
-       test_3 
+       test_3
 ```
 在 [], {}, 或 () 中的多行语句，不需要使用反斜杠( \\ )
 ```python
-test = [ 'test_1',  
+test = [ 'test_1',
          'test_2',
          'test_3' ]
 ```
@@ -37,6 +37,4 @@ help(max)
 ![help](https://github.com/yrylalala/Python-Learning/blob/master/pic/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86(2)/2.jpg?raw=true)
 
 
-
-
-
+####[返回目录](https://yrylalala.github.io/Python-Learning/)

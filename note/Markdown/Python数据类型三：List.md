@@ -20,7 +20,7 @@
 ```python
 list = [ 'abcd', 123 , 1.23, 'e' ]
 tinylist = [list, 'fghi']     # 列表支持嵌套
- 
+
 print (list)            # 输出完整列表
 print (list[0])         # 输出列表第一个元素
 print (list[-1])        # 输出列表最后一个元素,负数即为从最后往前读
@@ -65,7 +65,7 @@ list_2 = [ 4, 5, 6 ]
 len(list_1)    			# 计算长度
 list_1 + list_2 		# 拼接
 list_3 = ['a']*4 		# 重复
-2 in list_1     		# 元素是否在列表中 
+2 in list_1     		# 元素是否在列表中
 for x in list_1: print(x, end="") # 迭代
 ```
 
@@ -122,3 +122,4 @@ list(range(1,11))
 - 3、List可以使用+操作符进行拼接。
 - 4、List中的元素是可以改变的。
 
+####[返回目录](https://yrylalala.github.io/Python-Learning/)

@@ -14,7 +14,7 @@
 dict = {}
 dict['one'] = "value"
 dict[2]     = "值"
- 
+
 tinydict = {'key1': 1,'二':'ab', 3: 1.23}
 
 print (dict['one'])      	 # 输出键为 'one' 的值
@@ -109,3 +109,5 @@ del dict1          # 删除字典
 - 1、字典是一种映射类型，它的元素是键值对。
 - 2、字典的关键字必须为不可变类型，且不能重复。
 - 3、创建空字典使用 **{ }**。
+
+####[返回目录](https://yrylalala.github.io/Python-Learning/)

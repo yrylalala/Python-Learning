@@ -55,7 +55,7 @@ tup_2 = (4,5,6)
 len(tup_1)   			# 计算长度
 tup_1 + tup_2 		    # 拼接
 tup_3 = ('a',)*4 		# 重复
-2 in tup_1     		    # 元素是否在列表中 
+2 in tup_1     		    # 元素是否在列表中
 for x in tup_1: print (x, end="") # 迭代
 ```
 
@@ -83,3 +83,4 @@ for x in tup_1: print (x, end="") # 迭代
 - 3、注意构造包含0或1个元素的元组的特殊语法规则。
 - 4、元组也可以使用+操作符进行拼接。
 
+####[返回目录](https://yrylalala.github.io/Python-Learning/)

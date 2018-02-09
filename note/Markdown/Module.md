@@ -53,8 +53,8 @@ import sys                   # 使用 sys 模块，利用import 语句导入 sys
 def test():
     args = sys.argv                # 在导入模块 sys 之后，就可以利用变量 sys 来访问模块中的所有功能
     if len(args)==1:               # sys 模块中的变量argv，用 list 保存了命令行的所有参数。其中至少
-        print('Hello, world!')     # 有一个参数， 因为第一个参数永远是该.py文件的名称 
-    elif len(args)==2:             
+        print('Hello, world!')     # 有一个参数， 因为第一个参数永远是该.py文件的名称
+    elif len(args)==2:
         print('Hello, %s!' % args[1])
     else:
         print('Too many arguments!')
@@ -95,3 +95,4 @@ from modname import name1[, name2[, ... nameN]]
 
 ###### 注意，private函数和变量 <u>*不应该*</u> 被直接引用，而不是 *<u>不能</u>* 被直接引用，是因为Python并没有一种方法可以完全限制访问 private 函数或变量，但是，从编程习惯上不应该引用 private 函数或变量。
 
+####[返回目录](https://yrylalala.github.io/Python-Learning/)
