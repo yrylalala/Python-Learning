@@ -5,12 +5,12 @@
 - #### Python 基础知识(1)
 - #### Python 基础知识(2)
 - #### Python 数据类型
-- - ##### Number
-- - ##### String
-- - ##### List
-- - ##### Tuple
-- - ##### Dictionary
-- - ##### Set
+  - ##### Number
+  - ##### String
+  - ##### List
+  - ##### Tuple
+  - ##### Dictionary
+  - ##### Set
 - #### Python 控制语句
 - #### Function
 - #### 生成器和迭代器
