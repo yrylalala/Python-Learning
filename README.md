@@ -1,19 +1,19 @@
 # Python-Learning
 ### [目录](https://yrylalala.github.io/Python-Learning/)
-- #### Python 相关简介
-- #### Python 解释器
-- #### Python 基础知识(1)
-- #### Python 基础知识(2)
+- #### [Python 相关简介](https://yrylalala.github.io/Python-Learning/note/Html/Python%E7%9B%B8%E5%85%B3%E7%AE%80%E4%BB%8B.html)
+- #### [Python 解释器](https://yrylalala.github.io/Python-Learning/note/Html/Python%E8%A7%A3%E9%87%8A%E5%99%A8.html)
+- #### [Python 基础知识(1)](https://yrylalala.github.io/Python-Learning/note/Html/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86(1).html)
+- #### [Python 基础知识(2)](https://yrylalala.github.io/Python-Learning/note/Html/Python%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86(2).html)
 - #### Python 数据类型
-  - ##### Number
-  - ##### String
-  - ##### List
-  - ##### Tuple
-  - ##### Dictionary
-  - ##### Set
-- #### Python 控制语句
-- #### Function
-- #### 生成器和迭代器
-- #### Module
-- #### 面向对象(一)：类和实例
-- #### 面向对象(二)：继承和多态
+  - ##### [Number](https://yrylalala.github.io/Python-Learning/note/Html/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%80%EF%BC%9ANumber.html)
+  - ##### [String](https://yrylalala.github.io/Python-Learning/note/Html/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BA%8C%EF%BC%9AString.html)
+  - ##### [List](https://yrylalala.github.io/Python-Learning/note/Html/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%89%EF%BC%9AList.html)
+  - ##### [Tuple](https://yrylalala.github.io/Python-Learning/note/Html/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%9B%9B%EF%BC%9ATuple.html)
+  - ##### [Dictionary](https://yrylalala.github.io/Python-Learning/note/Html/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BA%94%EF%BC%9ADictionary.html)
+  - ##### [Set](https://yrylalala.github.io/Python-Learning/note/Html/Python%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%85%AD%EF%BC%9ASet.html)
+- #### [Python 控制语句](https://yrylalala.github.io/Python-Learning/note/Html/Python%E6%8E%A7%E5%88%B6%E8%AF%AD%E5%8F%A5.html)
+- #### [Function](https://yrylalala.github.io/Python-Learning/note/Html/Function.html)
+- #### [生成器和迭代器](https://yrylalala.github.io/Python-Learning/note/Html/%E7%94%9F%E6%88%90%E5%99%A8%E5%92%8C%E8%BF%AD%E4%BB%A3%E5%99%A8)
+- #### [Module](https://yrylalala.github.io/Python-Learning/note/Html/Module.html)
+- #### [面向对象(一)：类和实例](https://yrylalala.github.io/Python-Learning/note/Html/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1(%E4%B8%80)%EF%BC%9A%E7%B1%BB%E5%92%8C%E5%AE%9E%E4%BE%8B.html)
+- #### [面向对象(二)：继承和多态](https://yrylalala.github.io/Python-Learning/note/Html/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1(%E4%BA%8C)%EF%BC%9A%E7%BB%A7%E6%89%BF%E5%92%8C%E5%A4%9A%E6%80%81.html)
